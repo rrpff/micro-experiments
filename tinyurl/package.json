@@ -1,0 +1,17 @@
+{
+  "name": "tinyurl",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -p 3000"
+  },
+  "keywords": [],
+  "author": "Richard Foster <richard@rpf.me> (http://rpf.me)",
+  "license": "ISC",
+  "dependencies": {
+    "lowdb": "^0.14.0",
+    "micro": "^6.1.0",
+    "uuid": "^2.0.3"
+  }
+}
