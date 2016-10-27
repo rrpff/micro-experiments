@@ -1,0 +1,25 @@
+{
+  "name": "micro-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "async-node": "0.0.5",
+    "micro": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "async-node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuren/micro-experiments.git"
+  },
+  "keywords": [],
+  "author": "Richard Foster <richard@rpf.me> (http://rpf.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuren/micro-experiments/issues"
+  },
+  "homepage": "https://github.com/zuren/micro-experiments#readme"
+}
