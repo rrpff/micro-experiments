@@ -1,4 +1,5 @@
 const { send, json, createError } = require('micro')
+const redirect = require('./lib/micro-redirect')
 const { getAllLinks, getLink, addLink } = require('./lib/links')
 
 module.exports = async function (req, res) {
@@ -19,6 +20,5 @@ module.exports = async function (req, res) {
     throw createError(404, 'That link does not exist')
   }
 
-  res.writeHead(301, { Location: link.location })
-  res.end()
+  redirect(res, 301, link.location)
 }
