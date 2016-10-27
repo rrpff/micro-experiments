@@ -1,5 +1,6 @@
 const micro = require('micro')
 const { spawn } = require('child_process')
+const { apps } = require('./config')
 
 function start (app) {
   const server = spawn('micro', [app.name, '-p', app.port])
@@ -14,11 +15,6 @@ function start (app) {
 
   return server
 }
-
-const apps = [
-  { name: 'tinyurl', port: 3000 },
-  { name: 'hello-world', port: 3001 }
-]
 
 const servers = apps.map(start)
 
