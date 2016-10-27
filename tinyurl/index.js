@@ -14,10 +14,11 @@ module.exports = async function (req, res) {
       .join('\n')
   }
 
-  const link = getLink(req.url.slice(1))
+  const slug = req.url.slice(1)
+  const link = getLink(slug)
 
   if (link === undefined) {
-    throw createError(404, 'That link does not exist')
+    throw createError(404, `The link "${slug}" does not exist`)
   }
 
   redirect(res, 301, link.location)
